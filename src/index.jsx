@@ -8,6 +8,7 @@ import App from './components/app.jsx';
 const Hello = ({ name }) => {
   return (
     <div>
+      <h1>{ name }</h1>
       <App />
     </div>
   );

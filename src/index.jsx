@@ -5,10 +5,9 @@ import '../assets/stylesheets/application.scss';
 
 import App from './components/app.jsx';
 
-const Hello = ({ name }) => {
+const Root = () => {
   return (
     <div>
-      <h1>{ name }</h1>
       <App />
     </div>
   );
@@ -16,5 +15,5 @@ const Hello = ({ name }) => {
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  ReactDOM.render(<Root />, root);
 }

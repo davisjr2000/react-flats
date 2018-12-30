@@ -7,8 +7,11 @@ const FlatList = (props) => {
       return (
         <Flat
         name={flat.name}
+        index={index}
         price={flat.price}
-        imageUrl={flat.imageUrl}/>
+        selectFlat={props.selectFlat}
+        imageUrl={flat.imageUrl}
+        selected={flat.name === props.selectedFlat.name }/>
         );
     });
   };
